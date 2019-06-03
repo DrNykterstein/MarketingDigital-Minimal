@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	 <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<!-- Declaro la navegacion -->
+    <nav class="grey darken-4">
+      <!--Para que este centrada nuestra barra de navegacion , uso el container-->
+      <div class="nav-wrapper container">
+        <a href="#!" class="right brand-logo orange-text text-orange-darken-4">MarketingDigital</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="index.html"><i class="material-icons left">home</i>Inicio</a></li>
+          <li><a href="about.html"><i class="material-icons left">person</i>AboutMe</a></li>
+          <li><a href=""><i class="material-icons left">streetview</i>Portafolio</a></li>
+          <li><a href="contacto.html"><i class="material-icons left">email</i>Contacto</a></li>
+        </ul>  
+      </div>
+    </nav>
+
+    <!-- Navegacion para dispositivos mobiles -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">AboutMe</a></li>
+      <li><a href="">Portafolio </a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+
+    <!-- formulario de contacto -->
+    <div class="section container"><!-- para centrar y poner margenes -->
+    	<!--sistema de columnas -->
+    	<div class="row">
+    		<form class="col s12 grey darken-4"><!-- S12, ocupara la pantalla completa -->
+    			<div class="row card-panel"><!-- Para que cada campo se encuentre encerrado en columnas, card-panel para que se encuentren dentro de una tarjeta -->
+    				<div class="input-field col s6 ">
+    					<input type="text" placeholder="Ingresa tu nombre" id="nombre" class="validate" required>
+    					<label for="nombre">Nombre</label>
+    					
+    				</div><!--input-field, nombre-->
+
+    				<div class="input-field col s6 ">
+    					<input type="text" id="apellido" class="validate" required>
+    					<label for="apellido">Apellido</label>	
+    				</div><!--input-field , apellido-->
+
+    				<div class="input-field col s12 ">
+    					<textarea id="textarea" class="materialize-textarea"></textarea>
+    					<label for="textarea">Escriba su mensaje</label>	
+    				</div><!--input-field , textarea-->
+
+    				<div class="input-field col s12 ">
+    					<input type="email" id="email">
+    					<label for="Email">Email</label>	
+    				</div><!--input-field , apellido-->
+
+    				<button class="btn orange darken-4" type="submit">Enviar</button>
+
+    			</div><!--row card-panel -->
+    		</form><!--formulario -->
+    	</div><!-- row -->
+    </div><!-- section container -->
+
+      <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          M.AutoInit();
+        });
+    </script>
+
+
+</body>
+</html>
